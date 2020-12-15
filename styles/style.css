@@ -56,8 +56,14 @@
   font-size: 18px;
   line-height: 28px;
 }
+.services .container-flex {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
 .services .container-flex .col img {
   width: 100%;
+  padding: 0 15px;
 }
 .services .container-flex .col:nth-child(1) {
   position: relative;
