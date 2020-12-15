@@ -1,0 +1,50 @@
+footer {
+  background-color: #515151;
+  .container {
+    padding: 36px 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    .footer-logo {
+      color: $white-clr;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        color: $white-clr;
+        font-size: 12px;
+        line-height: 28px;
+      }
+    }
+    .footer-input {
+      text-align: right;
+      input {
+        padding: 8px 20px;
+        color: $text-light;
+      }
+      button {
+        padding: 8px 12px;
+        background-color: #c6b393;
+        color: $white-clr;
+        text-transform: uppercase;
+        border: none;
+      }
+    }
+    .col-right ul {
+      justify-content: flex-end;
+      li {
+        margin-left: 10px;
+      }
+    }
+    .col-left ul {
+      justify-content: flex-start;
+      li {
+        margin-right: 10px;
+      }
+    }
+
+    &:nth-child(2) {
+      border-top: 1px solid rgba(#fff, 0.2);
+    }
+  }
+}

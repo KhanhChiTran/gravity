@@ -1,0 +1,211 @@
+// Hero section
+.hero {
+  &-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1px;
+  }
+  &-img {
+    width: 100%;
+  }
+  .col-right {
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      li {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+// About section
+.about {
+  &-user {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    img {
+      width: 65px;
+      height: 65px;
+      margin-right: 30px;
+    }
+    &__info span {
+      display: block;
+      &:nth-child(1) {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+      }
+      &:nth-child(2) {
+        font-size: 18px;
+        line-height: 28px;
+        color: $text-light;
+      }
+    }
+  }
+}
+
+// Services section
+.services {
+  .col-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 80px;
+
+    li {
+      margin-bottom: 20px;
+      a {
+        color: $text-link;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+  .container-flex {
+    .col img {
+      width: 100%;
+    }
+    .col:nth-child(1) {
+      position: relative;
+
+      .play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+    }
+  }
+}
+
+// Features section
+
+.features {
+  .col-left {
+    position: relative;
+    img:nth-child(2) {
+      position: absolute;
+      top: 0;
+    }
+  }
+  .col-right {
+    .features-link {
+      .features-link-result,
+      .features-link-design {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        a {
+          margin-left: 30px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 4px;
+          color: $text-dark;
+        }
+      }
+    }
+  }
+}
+
+// Works section
+.works {
+  .col-left {
+    nav {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .item-link {
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        margin-left: 20px;
+        .active {
+          color: $primary-clr;
+        }
+        a {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          color: rgba($text-dark, 0.3);
+        }
+      }
+    }
+  }
+  .videos {
+    width: calc(100% + 30px);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    .col {
+      padding: 15px;
+      img {
+        width: 100%;
+      }
+    }
+    .active {
+      position: relative;
+      .play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+  }
+  .col-right {
+    .btn-primary {
+      margin-left: auto;
+      display: block;
+      padding: 17px 25px;
+      background-color: $btn-bg-clr;
+      border: none;
+      color: $white-clr;
+    }
+  }
+}
+
+// Testimonials section
+
+.testimonials {
+  .col-left {
+    position: relative;
+    .btn-nav {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .col-right img {
+    margin-left: auto;
+  }
+}
+
+// Clients section
+.clients {
+  .col-left {
+    .content-title {
+      margin: 0;
+    }
+  }
+  .col-right {
+    .logo {
+      position: unset;
+      margin-bottom: 17px;
+      color: $text-dark;
+    }
+  }
+  .container {
+    justify-content: space-between;
+  }
+}
